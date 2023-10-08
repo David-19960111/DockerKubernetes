@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 
+spec:
+  replicas: 3  # Número de réplicas que deseas
+  selector:
+    matchLabels:
+      app: tu-aplicacion
+  template:
+    metadata:
+      labels:
+        app: tu-aplicacion
+    spec:
+      containers:
+      - name: tu-contenedor
+        image: imgenproject:v0.0.7  # Nombre de tu imagen de Docker
+        ports:
+        - containerPort: 80  # Puerto en el que tu aplicación se ejecuta dentro del contenedor
