@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: My-deployment
+  name: mydeployment
 spec:
-  replicas: 3  # Número de réplicas que deseas
+  replicas: 3  
   selector:
     matchLabels:
       app: ProjectDevops-app
@@ -13,7 +13,7 @@ spec:
         app: ProjectDevops-app
     spec:
       containers:
-      - name: My-contenedor
+      - name: mydeployment
         image: anarkatomica/imagenproject:0.0.7  
         ports:
         - containerPort: 80  
