@@ -15,7 +15,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN apt-get update && apt-get install -y apache2
 
 #Exponer el puerto 80 para acceder al servidor web en el contenedor
-EXPOSE 8080
+EXPOSE 80
 
 #Comando para iniciar el servidor web
 CMD ["apache2ctl", "-D", "FOREGROUND"]
