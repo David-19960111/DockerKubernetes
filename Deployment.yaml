@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ubuntudeployment
 spec:
-  replicas: 1  
+  replicas: 5  
   selector:
     matchLabels:
       app: ProjectDevops-app
