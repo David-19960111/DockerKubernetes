@@ -19,7 +19,5 @@ spec:
         image: anarkatomica/imagenproject:0.0.7  
         ports:
         - containerPort: 80
-  rollbackTo:
-    revision: 5
 
 
