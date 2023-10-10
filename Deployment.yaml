@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: mydeployment
-        image: anarkatomica/imagenproject:0.0.7  
+        image: anarkatomica1996/imagenproject:0.0.7
         ports:
         - containerPort: 80
 
