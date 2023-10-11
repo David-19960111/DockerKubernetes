@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: my-volume-pvc
-  namespace: tools
+  namespace: tools                   
   labels:
     app: ProjectDevops-app
 spec:
