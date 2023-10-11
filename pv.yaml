@@ -10,5 +10,4 @@ spec:
     storage: 8Gi
   accessModes:
     - ReadWriteOnce
-  hostPath:
-    path: /data/my-volume/
+  
