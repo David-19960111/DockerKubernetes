@@ -19,5 +19,7 @@ spec:
         image: anarkatomica1996/imagenproject:0.0.7
         ports:
         - containerPort: 80
+  strategy:
+    type: Recreate
 
 
