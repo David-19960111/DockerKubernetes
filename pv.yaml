@@ -10,4 +10,6 @@ spec:
     storage: 8Gi
   accessModes:
     - ReadWriteOnce
-  
+  persistentVolumeReclaimPolicy: Retain
+  hostPath:
+    path: /data/my-volume-pv/
