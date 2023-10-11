@@ -20,6 +20,9 @@ spec:
         ports:
         - containerPort: 80
   strategy:
-    type: Recreate
+      type: RollingUpdate
+      rollingUpdate:
+        maxUnavailable: 1
+        maxSurge: 1
 
 
